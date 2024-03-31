@@ -1,0 +1,13 @@
+<!--<div th:fragment="nodeCard(title, link)" class="card d-flex align-items-center justify-content-center" style="width: 304px; height: 206px; font-size: 3rem;padding: 0px;">
+	<a th:href="@{${link}}" class="card-body text-decoration-none d-flex align-items-center">
+		<p th:text="${title}"></p>
+	</a>
+</div>-->
+
+<a th:href="@{${link}}" th:fragment="nodeCard(title, link)" class="card text-white border-0"
+	style="width: 304px; height: 206px; font-size: 3rem;padding: 0px;">
+	<img th:src="@{/images/folder.png}" class="card-img" style="width: 304px; height: 356px; margin-top: -20%;">
+	<div class="card-img-overlay d-flex align-items-center justify-content-center" style="width: 304px; height: 206px;">
+		<h1 th:text="${title}" style="margin-top: 10%;"></h1>
+	</div>
+</a>

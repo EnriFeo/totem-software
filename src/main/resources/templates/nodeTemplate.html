@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>totem cral</title>
+	<link th:href="@{/css/bootstrap/bootstrap.min.css}" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH">
+</head>
+
+<body style="height: 1920px; width: 1080px; margin: 0;" class="d-flex flex-column justify-content-between">
+	<div th:replace="~{fragments/header :: header}"></div>
+	<div th:replace="~{fragments/showContent :: embed(node=${node})}"></div>
+	<div th:replace="~{fragments/footer :: nodeNavigationButtons(prev=${node.previous}, next=${node.next})}"></div>
+
+	<script th:src="@{/js/bootstrap/bootstrap.bundle.min.js}"
+		integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"></script>
+</body>
+
+</html>
