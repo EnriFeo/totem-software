@@ -27,7 +27,7 @@ replay_pid*
 *.classpath
 *.project
  
- target/
- .settings/
- .idea/
- .mvn/
+target/
+.settings/
+.idea/
+.mvn/
