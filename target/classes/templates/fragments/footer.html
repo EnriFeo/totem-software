@@ -1,8 +1,0 @@
-<div th:fragment="nodeNavigationButtons(prev, next)" class="d-flex w-auto h-auto justify-content-center gap-3 p-3">
-	<div th:replace="~{fragments/button :: button(href=${prev}, icon_path='M20.3284 11.0001V13.0001L7.50011 13.0001L10.7426 16.2426L9.32842 17.6568L3.67157 12L9.32842 6.34314L10.7426 7.75735L7.49988 11.0001L20.3284 11.0001Z', title=null)}">
-	</div>
-	<div th:replace="~{fragments/button :: button(href='/totem/', icon_path=null, title='Home')}">
-	</div>
-	<div th:replace="~{fragments/button :: button(href=${next}, icon_path='M15.0378 6.34317L13.6269 7.76069L16.8972 11.0157L3.29211 11.0293L3.29413 13.0293L16.8619 13.0157L13.6467 16.2459L15.0643 17.6568L20.7079 11.9868L15.0378 6.34317Z', title=null)}">
-	</div>
-</div>

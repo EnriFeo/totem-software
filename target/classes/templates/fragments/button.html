@@ -1,7 +1,0 @@
-<a th:fragment="button(href, icon_path, title)" class="btn d-flex justify-content-center p-5 align-items-center bg-dark-subtle"
-	style="width: 309px; height: 208px;" th:href="@{${href}}">
-	<span class="fs-1" th:if="${title != null}" th:text="${title}"></span>
-	<svg th:if="${icon_path != null}" class="w-100 h-100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-		<path class="w-100 h-100" th:d="${icon_path}" fill="currentColor" />
-	</svg>
-</a>
